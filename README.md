@@ -37,4 +37,63 @@ Learn How to Build Website
     - 所有的标签都是双标签，块状元素，是装载内容元素的“盒子”
     - 列表可以多重嵌套，来实现复杂的栏目排版
 
-#### 列表的CSS样式
+### 列表的CSS样式
+- 列表样式的专有属性： list-style
+    
+    list-style是针对列表的项目符号进行样式设置的的专有属性
+
+    |属性| 说明 |
+    |:--:|:--:|
+    |list-style|设置所有列表属性|
+    |list-style-type|列表符号的类型|
+    |list-style-image|列表符号的图像|
+    |list-style-position|列表符号的放置位置|
+
+    - list-style-type
+
+        常见值： <a href='http://www.w3school.com.cn/cssref/pr_list-style-type.asp'>CSS2枚举值</a>
+
+        - disc: 实心小圆点(无序列表默认值)
+        - decimal: 数字（有序列表默认值）
+        - none: 无（去除默认的项目符号）
+        
+        > PS: 通过该属性可实现有序无序李彪的视觉转换
+
+    - list-style-image
+        - 设定列表的项目符号的自定义图像
+        - 作用：当前项目符号类型不能满足设计需求时，可以通过该属性自定义列表项目符号
+        - 值 url(图片路径)
+        - 弊端：无法精确定位图片的位置
+        
+        > PS: 该属性的应用并不多见
+
+    - list-style-position
+        - 设定列表项目符号的位置
+        - 项目符号属于每一个列表项，所以此属性只能定义项目符号的位置是放置在项目里面还是外面，无法精确控制定位距离
+        
+        |值|说明|
+        |:--:|:--:|
+        |inside|项目符号位于列表项目内|
+        |outside|项目符号位于列表项外部（默认值）|
+    
+    - list-style
+        - 值声明顺序
+        
+            `list-style-type > list-style-position > list-style-image`
+        - 声明的时候可以忽略其中某个值得设定
+        - 如果同时定义了类型和图像，则图像优先
+- 实际应用原则
+    - 使用盒子模型属性来精确控制列表
+    - 使用列表项的背景属性来模拟项目符号
+    > PS: 由于list-style主要设置项目符号且无法精确控制，所以实际应用中并不提倡使用list-style去控制列表项的样式
+- 实际应用技巧
+    1. 消除默认的列表区域中的边距 `ul,ol {padding: 0;} dl {margin:0;}`
+
+        `<ul> <ol>`默认存在`padding`，`<dl>`默认存在`margin`
+    2. 消除默认的项目符号 `ul,ol {list-style:none;}`
+
+        项目符号设置基于列表区域和列表项，`<ul> <ol>`默认存在项目符号，`<dl>`没有。
+    3. 使用背景属性模拟列表项符号效果
+
+        项目符号属于列表项，背景属性需要附加给`<li> <dt> <dd>`
+    
