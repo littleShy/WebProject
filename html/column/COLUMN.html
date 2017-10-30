@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>板块制作</title>
+        <style type="text/css">
+            * {padding:0;margin:0;}
+            body {background: #ffffff; font-family: '微软雅黑', '宋体'; font-size: 14px;}
+            ul {list-style:none;}
+            .col1 {width:380px; margin: 50px auto; font-size: 14px; line-height: 1.7em;}
+                .col1 li {padding-left:20px; background: url("../../images/camera.png") no-repeat left;}
+                .col1 li b {font-weight:normal;}
+                .col1 li a {text-decoration:none; color: #333;}
+                .col1 li a:hover {color:#cd0000;}
+                .col1 li b::after {
+                    content: "|";
+                    font-size: 10px;
+                    margin:0 5px;
+                }
+            .col2 {width:500px; border: 1px #eeeeee solid;}
+            .col2 nav {background: red; }
+                .col2 nav a {line-height:25px; margin: 0 15px; font-size: 14px; color: #ffffff; text-decoration: none;}
+                .col2 nav a:hover { font-weight:bold;}
+            .col2 .list-li-out { height: 100px; border: 1px #eeeeee solid;}
+                .col2 .list-li-out img {float:left;}
+                .col2 h3 a {text-decoration: none; color: black;}
+                .col2 h3, .col2 .list-ul-in {margin-left: 210px; line-height:2em;}
+                .col2 .list-ul-out a:hover {color: red;}
+                .col2 .list-li-in a {
+                    float: left; width:120px;
+                    background:url("../../images/listItem.png") no-repeat left;
+                    padding-left: 20px;
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 12px;
+                }
+        </style>
+    </head>
+    <body>
+        <ul class="col1">
+            <li><b><a href="#">财经</a></b><a href="#">万达电商再转型:用户增至2.6亿业务仍亏</a></li>
+            <li><b><a href="#">关注</a></b><a href="#">您有一份11月实施的新规清单 请注意查收</a></li>
+            <li><b><a href="#">楼市</a></b><a href="#">48城将住房租赁政策纳入住房体系重要部分</a></li>
+            <li><b><a href="#">国际</a></b><a href="#">机密U盘在伦敦街头被捡获 含女王出行安排</a></li>
+            <li><b><a href="#">军事</a></b><a href="#">杜特尔特今将与安倍会谈 对日帮助表示感谢</a></li>
+        </ul>
+        <div class='col2'>
+            <nav>
+                <a href="#">首页</a>
+                <a href="#">推荐</a>
+                <a href="#">直播</a>
+                <a href="#">视频</a>
+                <a href="#">新闻</a>
+                <a href="#">娱乐</a>
+                <a href="#">体育</a>
+            </nav>
+            <ul class="list-ul-out">
+                <li class="list-li-out">
+                    <img src="../../images/list-0.jpg"></img>
+                    <h3><a href="#">测试标题</a></h3>
+                    <ul class="list-ul-in">
+                        <li class="list-li-in">
+                            <a href="#">测试内容测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-li-out">
+                    <img src="../../images/list-1.jpg"></img>
+                    <h3><a href="#">测试标题</a></h3>
+                    <ul class="list-ul-in">
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-li-out">
+                    <img src="../../images/list-2.png"></img>
+                    <h3><a href="#">测试标题</a></h3>
+                    <ul class="list-ul-in">
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                        <li class="list-li-in">
+                            <a href="#">测试内容</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
