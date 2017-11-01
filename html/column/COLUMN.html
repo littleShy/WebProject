@@ -4,6 +4,14 @@
         <title>板块制作</title>
         <style type="text/css">
             * {padding:0;margin:0;}
+            .clearfix {zoom:1;}
+                .clearfix:after {
+                    content:"";
+                    line-height:0;
+                    display: block;
+                    visibility:hidden;
+                    clear:both;
+                }
             body {background: #ffffff; font-family: '微软雅黑', '宋体'; font-size: 14px;}
             ul {list-style:none;}
             .col1 {width:380px; margin: 50px auto; font-size: 14px; line-height: 1.7em;}
@@ -11,27 +19,33 @@
                 .col1 li b {font-weight:normal;}
                 .col1 li a {text-decoration:none; color: #333;}
                 .col1 li a:hover {color:#cd0000;}
-                .col1 li b::after {
+                .col1 li b:after {
                     content: "|";
                     font-size: 10px;
                     margin:0 5px;
                 }
-            .col2 {width:500px; border: 1px #eeeeee solid;}
+            .col2 {width:500px;margin: 0 auto;}
             .col2 nav {background: red; }
                 .col2 nav a {line-height:25px; margin: 0 15px; font-size: 14px; color: #ffffff; text-decoration: none;}
                 .col2 nav a:hover { font-weight:bold;}
-            .col2 .list-li-out { height: 100px; border: 1px #eeeeee solid;}
+            .col2 .list-li-out {margin-top: 20px;}
                 .col2 .list-li-out img {float:left;}
-                .col2 h3 a {text-decoration: none; color: black;}
-                .col2 h3, .col2 .list-ul-in {margin-left: 210px; line-height:2em;}
+                .col2 h3 a {text-decoration: none; color: black; }
+                .col2 h3 {line-height: 20px; font-size: 20px;margin-bottom:8px; height:20px;width: 290px; overflow: hidden;}
+                .col2 h3, .col2 .list-ul-in {margin-left: 210px;}
                 .col2 .list-ul-out a:hover {color: red;}
                 .col2 .list-li-in a {
-                    float: left; width:120px;
+                    float: left; 
+                    width:120px;
+                    height: 26px;
+                    line-height: 26px;
                     background:url("../../images/listItem.png") no-repeat left;
                     padding-left: 20px;
+                    margin: 2px 0;
                     text-decoration: none;
                     color: #333;
                     font-size: 12px;
+                    overflow: hidden;
                 }
         </style>
     </head>
@@ -54,15 +68,15 @@
                 <a href="#">体育</a>
             </nav>
             <ul class="list-ul-out">
-                <li class="list-li-out">
+                <li class="list-li-out clearfix">
                     <img src="../../images/list-0.jpg"></img>
-                    <h3><a href="#">测试标题</a></h3>
+                    <h3><a href="#">测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题</a></h3>
                     <ul class="list-ul-in">
                         <li class="list-li-in">
-                            <a href="#">测试内容测试内容</a>
+                            <a href="#" title="测试内容测试内容测试内容测试内容">测试内容测试内容测试内容测试内容</a>
                         </li>
                         <li class="list-li-in">
-                            <a href="#">测试内容</a>
+                            <a href="#" title="测试内容">测试内容</a>
                         </li>
                         <li class="list-li-in">
                             <a href="#">测试内容</a>
@@ -72,7 +86,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="list-li-out">
+                <li class="list-li-out clearfix">
                     <img src="../../images/list-1.jpg"></img>
                     <h3><a href="#">测试标题</a></h3>
                     <ul class="list-ul-in">

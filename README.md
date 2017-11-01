@@ -119,7 +119,7 @@ Learn How to Build Website
             |line-through| 删除线|
             |overline| 上划线|
         - 通常为了美观，会消除超级链接默认的下划线修饰:`a {text-decoration:none;}`
-    - text-indent 设置文本的首行缩进
+    - `text-indent` 设置文本的首行缩进
         - 属性说明
             - 作用于块状元素，用来在块级元素的内容第一行添加一定的空格，以达到首行缩进的效果
             - 和`font-size`属性一样，对于首行缩进，你也可以使用`em px`或`%`
@@ -127,7 +127,7 @@ Learn How to Build Website
             - 一般使用相对单位em,以元素本身字体尺寸作为参考基准。
             - 中文网页中段落的首行缩进通常是2个文字的距离，常用代码`p {text-indent:2em;}`
             - 可以使用负值，产生一些特殊效果，如“悬挂缩进”
-    - text-transform 设置文本的转换（针对英文）
+    - `text-transform` 设置文本的转换（针对英文）
         - 属性说明
             
             用于转换文本中的大小写方式（忽略源文档中的大小写），对中文无影响
@@ -137,7 +137,7 @@ Learn How to Build Website
             |uppercase| 全部大写|
             |lowercase| 全部小写|
             |capitalize| 单词首字母大写|
-    - text-shadow 设置文本的阴影效果
+    - `text-shadow` 设置文本的阴影效果
         - 属性说明
             - `text-shadow`用来设置文本的阴影效果，是CSS3新增属性
             - 实现一种阴影效果需要设定一组值而非一个值，并按照顺序书写
@@ -291,7 +291,7 @@ Learn How to Build Website
             - 通过设置属性值#+id名，可以定位到具有特定ID属性的HTML元素所在位置
             > 例如：
                 
-                `<a href="#footer">`可以链接到当前页面中的`<div id="footer">`元素
+            `<a href="#footer">`可以链接到当前页面中的`<div id="footer">`元素
         - 相对路径URL，用来在网站内部跳转
         - 绝对路径URL，用来在不同网站页面之间进行跳转
         - 空链接
@@ -435,4 +435,8 @@ Learn How to Build Website
     3. 使用背景属性模拟列表项符号效果
 
         项目符号属于列表项，背景属性需要附加给`<li> <dt> <dd>`
+
+## 实例：栏目板块
+
+    通过实例制作栏目板块，综合应用文本、图片、连接、列表等。
     
