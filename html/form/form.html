@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表单控件</title>
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <form name="form-demo" action="#" method="get">
+            <select name="hplmn2">
+                    <option>河南</option>
+                    <option>湖南</option>
+                    <option>四川</option>
+                    <option selected>湖北</option>
+            </select>
+            <select name="faverate">
+                <optgroup label="水果">
+                    <option>苹果</option>
+                    <option>梨</option>
+                </optgroup>
+                <optgroup label="蔬菜">
+                    <option value="">黄瓜</option>
+                    <option>土豆</option>
+                    <option>地瓜</option>
+                </optgroup>
+            </select>
+            <button>提交</button>
+        </form>
+        最喜欢的浏览器:<input list="browsers" type='text'>
+        <datalist> id="browsers">
+            <option>IE</option>
+            <option>FireFox</option>
+            <option>Chrome</option>
+            <option>Opera</option>
+            <option>Safari</option>
+        </datalist>
+    </body>
+</html>
