@@ -2,10 +2,179 @@
 <html>
     <head>
         <title>商品展示-图文列表</title>
+        <style>
+            * {margin: 0;padding: 0;}
+            body {font-family:Cambria, "微软雅黑", "宋体", serif; font-size: 12px;background: white; color:black;}
+            .clearfix{zoom:1;}
+                .clearfix::after {content:"";display:block;visibility: hidden;line-height: 0;clear: both;}
+            ul {list-style:none;}
+            .product-list {width:1180px;margin: 30px auto;}
+                .product-item {border: 5px white solid; width:206px; float: left; margin-right: 20px; margin-bottom: 20px;}
+                .product-item:hover{border: 5px red solid;}
+                    .product-box {width:200px; border: 1px #f0e6e6 solid;padding: 2px;padding-bottom: 0;}
+                        .product-imgbox img {width: 200px;}
+                    .product-list h5 {color:red; font-size:20px;height:30px;}
+                        .product-list h5::before {content: "￥";font-size: 12px;color: red;}
+                    .product-list .product-offimgbox img {height: 15px;}
+                    .product-list .product-title, .product-list .product-vender {height: 12px; width:200px; height:12px;overflow: hidden;padding: 3px 0; }
+                        .product-list .product-title a {text-decoration:none; font-size:12px; line-height:12px;color:black;}
+                            .product-list .product-title a:hover {text-decoration:underline; color:red;}
+                        .product-list .product-vender a {font-size:12px; line-height:12px;color:gray;}
+                        .product-list .product-vender a:hover{color:red;}
+                    
+                    .product-list .product-info {border-top:1px #f0e6e6 solid;height: 30px;}
+                        .product-info .product-deal, .product-info .product-discuss{float:left; border-right:1px #f0e6e6 solid; height: 30px; color:#444447}
+                            .product-list .product-info b{color:red;font-weight:bold; line-height: 30px;}
+                            .product-list .product-info i a{font-style: normal;line-height: 30px;color:#4b4be6}
+                        .product-info .vender-contectbox {float:right;height: 30px;}
+                        .product-info .vender-contectbox img {width: 20px;margin: 5px 0;}
+
+        </style>
     </head>
     <body>
-        <ul class="prodect-list">
-            <li class="prodect-img"></li>
+        <ul class="product-list clearfix">
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+        </li>
+        <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="product-item">
+                <div class="product-box">
+                    <p class="product-imgbox"><img src="../../images/prod-1.jpg" title="点击查看商品详情页" alt=""/></p>
+                    <p class="product-price"><h5>58.00</h5></p>
+                    <p class="product-offimgbox"><a href="#"><img src="../../images/prod-off.png"/></a></p>
+                    <p class="product-title"><a href="#">一对装】南极人全棉枕头枕芯成人酒店羽丝绒护颈椎枕学生枕头正品</a></p>
+                    <p class="product-vender"><a href="#">南极人悠选专卖店</a></p>
+                    <div class="product-info">
+                        <span class="product-deal">月成交 <b>13万笔</b></span>
+                        <span class="product-discuss">评价 <i><a href="#">42万</a></i></span>
+                        <span class="vender-contectbox"><a href="#" title="与商家沟通"><img src="../../images/wangwang-icon.png"/></a></span>
+                    </div>
+                </div>
+            </li>
+        </li>
         </ul>
     </body>
 </html>
