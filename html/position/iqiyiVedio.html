@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {margin: 0;padding: 0;}
+            body {font-size: 12px;color: #1f1d1d;}
+            .video-list {list-style: none;text-align:center;display: block;margin: 30px auto;box-sizing: border-box;}
+            .video-list li {margin-right:20px;margin-bottom:20px;width: 180px; background:rgb(236, 231, 231);position: relative;z-index:1;display: inline-block;}
+                .video-list li img {width:180px;}
+                .video-list li b, .video-list li h5 {font-style:normal;font-weight: normal;}
+                .video-list li b {color: rgb(131, 131, 134);}
+                .video-list li h5 {color:#1a1717;font-size: 14px;}
+            .video-list li .img-vip {background: url("../../images/tag.png") no-repeat 0 0; width:34px;height:17px; position: absolute; top: 5px; left:5px;z-index:2;display: inline-block;}
+            .video-list li .img-madeself {background: url("../../images/tag.png") no-repeat -116px 0; width:42px; height: 40px; position: absolute; top:0; right:0; z-index: 3;display: inline-block;}
+            .video-list li .tag-qulity {background:#1a1717;position: absolute; top:79px; left:5px; z-index: 4;display: inline-block;padding: 2px 4px;color:rgb(136, 136, 136);border-radius: 2px;font-style: normal;}
+            .video-list li .tag-season {background:#1a1717;position: absolute; top:79px; right:5px; z-index: 4;display: inline-block;padding: 2px 4px;color:rgb(136, 136, 136);border-radius: 2px;font-style: normal;}
+            .side-nav {position: fixed; right: 20px;bottom: 80px;}
+                .side-nav ul {list-style: none;display: block;}
+                .side-nav li {position:relative;display: block;border: 1px #415043 solid; border-radius: 50%;margin-bottom: 8px; width:36px; height:36px;}
+                    .side-nav .nav-list .go-top {display: block;background: url("../../images/side-tag.png") no-repeat 0 -20px; width:18px; height:18px;margin: 8px auto;}
+                    .side-nav .nav-list .feedback {display: block;background: url("../../images/side-tag.png") no-repeat 0 -40px; width:18px; height:18px;margin: 8px auto;}
+                    .side-nav .nav-list .download {display: block;background: url("../../images/side-tag.png") no-repeat 0 -60px; width:18px; height:18px;margin: 8px auto;}
+                </style>
+    </head>
+    <body>
+        <ul class="video-list">
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-02.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+                <li>
+                    <img src="../../images/iqiyi-01.jpg" alt="视频替换文本">
+                    <h5>坑王驾到:VIP尊享</h5>
+                    <b>神秘美女国色天香撞脸岳云鹏？</b>
+                    <i class="img-vip"></i>
+                    <i class="img-madeself"></i>
+                    <i class="tag-qulity">1080P</i>
+                    <i class="tag-season">11-06期</i>
+                </li>
+        </ul>
+        <nav class="side-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="go-top"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="feedback"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="download"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
